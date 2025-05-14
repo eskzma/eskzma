@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Белый фон */
+  color: #1b5e20; /* Темно-зеленый текст */
+}
+
+header {
+  background-color: #e8f7ec; /* Светло-зеленый фон */
+  padding: 20px;
+  color: #1b5e20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #1b5e20;
+}
+
+nav {
+  flex-grow: 1;
+  margin-left: 40px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+nav a {
+  color: #1b5e20; /* Темно-зеленые ссылки */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.promo {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.promo img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  background-color: #ffffff; /* Белый фон */
+}
+
+.benefit {
+  text-align: center;
+  padding: 20px;
+  background-color: #e8f7ec; /* Светло-зеленый фон карточек */
+  border-radius: 15px;
+  border: 1px solid #c8e6c9; /* Тонкая зелёная рамка */
+}
+
+.benefit img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.benefit h3 {
+  font-size: 1.2rem;
+  color: #1b5e20;
+  margin-bottom: 10px;
+}
+
+.benefit p {
+  font-size: 0.95rem;
+  color: #4f4f4f;
+}
+
+nav .phone {
+  margin-left: 0px;
+  font-weight: bold;
+  color: #1b5e20;
+}

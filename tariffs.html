@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тарифы на аренду - RizaCar</title>
+    <link rel="stylesheet" href="styles.css"> <style>
+      /* Стили для страницы тарифов */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        line-height: 1.5;
+      }
+      h1, h2 {
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+      .tariff-plans {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .tariff-card {
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #fff;
+      }
+      .tariff-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+      .tariff-card h3 {
+        margin-bottom: 10px;
+        color: #007bff;
+        text-align: center;
+      }
+      .tariff-card ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 15px;
+      }
+      .tariff-card ul li {
+        margin-bottom: 5px;
+      }
+      .tariff-price {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      .tariff-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        text-decoration: none;
+      }
+      .tariff-button:hover {
+        background-color: #0056b3;
+      }
+      @media (max-width: 768px) {
+        .tariff-plans {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RizaCar</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="cars.html">Автомобили</a></li>
+                <li><a href="tariffs.html">Тарифы</a></li>
+                <li><a href="contract.html">Договор</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Тарифы на аренду автомобилей</h1>
+        <p>Выберите наиболее подходящий тарифный план для вашей поездки:</p>
+
+        <div class="tariff-plans">
+            <div class="tariff-card">
+                <h3>Эконом</h3>
+                <ul>
+                    <li>Цена: от 10000 тенге/сутки</li>
+                    <li>Пробег: до 200 км/сутки</li>
+                    <li>Страховка: ОСАГО</li>
+                    <li>Автомобили: Lada Priora, Hyundai Solaris</li>
+                </ul>
+                <div class="tariff-price">10000 Тг/сутки</div>
+            </div>
+
+            <div class="tariff-card">
+                <h3>Стандарт</h3>
+                <ul>
+                    <li>Цена: от 25000 тенге/сутки</li>
+                    <li>Пробег: до 300 км/сутки</li>
+                    <li>Страховка: ОСАГО, ДСАГО</li>
+                    <li>Автомобили: Toyota Camry, Kia Optima</li>
+                </ul>
+                <div class="tariff-price">25000 Тг/сутки</div>
+            </div>
+
+            <div class="tariff-card">
+                <h3>Бизнес</h3>
+                <ul>
+                    <li>Цена: от 35000 тенге/сутки</li>
+                    <li>Пробег: без ограничений</li>
+                    <li>Страховка: ОСАГО, ДСАГО, КАСКО</li>
+                    <li>Автомобили: Mercedes-Benz E-Class, BMW 5 Series</li>
+                </ul>
+                <div class="tariff-price">35000 Тг/сутки</div>
+            </div>
+
+            <div class="tariff-card">
+                <h3>Премиум</h3>
+                <ul>
+                    <li>Цена: от 60000 тенге/сутки</li>
+                    <li>Пробег: без ограничений</li>
+                    <li>Страховка: Полное КАСКО</li>
+                    <li>Автомобили: BMW X5, Mercedes-Benz S-Clas</li>
+                </ul>
+                <div class="tariff-price">60000 Тг/сутки</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 RizaCar</p>
+    </footer>
+</body>
+</html>
